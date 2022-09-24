@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Reservia</title>
-  <meta name="description" content="Reservia is a travel booking platform">
+  <title>Booki</title>
+  <meta name="description" content="Booki is a travel booking platform">
   <meta name="Paul" content="course Openclassroms">
 
 
@@ -17,7 +17,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="apple-touch-icon" href="touch-icon-iphone.png">
 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -26,7 +28,7 @@
 
     <!-- Header -->
     <header class="header">
-      <a href="#" class="logo-link"><img src="ressources/logo/Reservia.svg" alt="Logo Reservia" class="logo-img"></a>
+      <a href="#" class="logo-link"><img src="ressources/logo/booki_logo.svg" alt="Logo Reservia" class="logo-img"></a>
       <nav class="navigation">
         <a href="#hosting" id="hebergement-navlink">Hébergements</a>
         <a href="#activities" id="activities-navlink">Activités</a>
@@ -34,17 +36,53 @@
       </nav>
     </header>
 
-    <!-- Search section -->
-    <section class="search">Search section</section>
+    <main>
+      <!-- Search section -->
+      <section class="search">
+        <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+        <p>En plein centre-ville ou pleine nature</p>
+        <form action="#" class="form-search">
+          <span class="search-form-icon-wrapper"><i class="fas fa-map-marker-alt search-form-icon"></i></span>
+          <label for="search-city" id="search-city">Saisissez votre ville favorite.</label>
+          <input type="text" name="search-city" id="search-city" placeholder="Marseille, France">
+          <button type="submit" class="rechercher"><span>Rechercher</span> <i
+              class="fas fa-search magnifier-form-icon"></i></button>
+        </form>
+        <div class="search-filters">
+          <h2 class="filtre-title">Filtres</h2>
+          <button class="filter-button">
+            <span class="filter-button-icon-wrapper"><i class="fas fa-money-bill-wave filter-icon"></i></span>
+            <span class="text-filter-button">Économique</span>
+          </button>
+          <button class="filter-button">
+            <span class="filter-button-icon-wrapper"><i class="fas fa-child searc filter-icon"></i></span>
+            <span class="text-filter-button">Familial</span>
+          </button>
+          <button class="filter-button">
+            <span class="filter-button-icon-wrapper"><i class="fas fa-heart filter-icon"></i></span>
+            <span class="text-filter-button">Romantique</span>
+          </button>
+          <button class="filter-button">
+            <span class="filter-button-icon-wrapper"><i class="fas fa-dog filter-icon"></i></span>
+            <span class="text-filter-button">Animaux autorisés</span>
+          </button>
+        </div>
+        <div class="search-results">
+          <div class="search-result-icon-wrapper"><i class="fas fa-info info-icon"></i></div>
+          <p class="search-filter-text">Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
 
-    <!-- Hosting section -->
-    <section class="hosting" id="hosting">
-      <div class="hosting-hebergement">Hébergements</div>
-      <aside class="most-popular">Most popular</aside>
-    </section>
+      </section>
 
-    <!-- Activities section -->
-    <section class="activities" id="activities">Activities</section>
+      <!-- Hosting section -->
+      <section class="hosting" id="hosting">
+        <div class="hosting-hebergement">Hébergements</div>
+        <aside class="most-popular">Most popular</aside>
+      </section>
+
+      <!-- Activities section -->
+      <section class="activities" id="activities">Activities</section>
+    </main>
   </div>
 
   <!-- Footer -->

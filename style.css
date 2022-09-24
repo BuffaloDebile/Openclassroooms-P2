@@ -46,6 +46,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: Raleway, Arial, sans-serif;
+  color: var(--dark-gray);
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -94,39 +95,64 @@ select {
 
 /* CSS Reset end */
 
+/* Wrapper to stick footer in the bottom */
+
 .wrapper {
   min-height: calc(100vh - 230px);
 }
+/* General styling */
+
+h1 {
+  font-size: 3.2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+/* Header */
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
-  background: var(--grey);
+
   font-size: 5rem;
   flex-wrap: wrap;
 }
 
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 nav {
   display: flex;
-  gap: 50px;
+  gap: 60px;
   padding: 0 30px;
 }
 
 .logo-img {
   height: auto;
-  min-width: 110px;
+  min-width: 30px;
+}
+
+img.logo-img {
+  height: 4.5rem;
+  width: auto;
+  padding: 0 2rem;
 }
 
 nav a {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: var(--dark-gray);
   text-decoration: none;
   text-align: center;
-  padding: 60px 0;
+  padding: 25px 0;
   border-top: 4px solid transparent;
   transition: all ease-in-out 0.2s;
 }
@@ -145,13 +171,179 @@ nav #sincrire-navlink {
   color: var(--blue);
 }
 
+/* Search section */
+
 .search {
   max-width: 1400px;
   margin: 0 auto;
-  background: var(--grey);
+
   font-size: 5rem;
   margin-bottom: 10px;
 }
+
+form.form-search {
+  display: inline-flex;
+  align-items: stretch;
+  height: 50px;
+  line-height: 0;
+}
+
+span.search-form-icon-wrapper {
+  background-color: var(--grey);
+  padding: 0px 20px;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span i.fa-map-marker-alt {
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-left: 0.2rem;
+  margin-top: -5px;
+}
+
+.form-search input {
+  width: 25rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0px 24px;
+  border-top: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+  line-height: 1.15;
+
+  flex: 1;
+}
+
+.form-search input::placeholder {
+  color: #b5b5b5;
+}
+
+.form-search input:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: -2px;
+}
+
+button.rechercher {
+  background-color: var(--blue);
+  color: white;
+  font-weight: 600;
+  border-radius: 0 15px 15px 0;
+  border: none;
+  cursor: pointer;
+  padding: 0 24px;
+  font-size: 2.8rem;
+}
+
+i.magnifier-form-icon {
+  display: none;
+}
+
+form label#search-city {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Search filters */
+
+.search-filters {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  margin: 3rem 2.4rem 0rem 0rem;
+}
+
+h2.filtre-title {
+  font-size: 2.4rem;
+  margin-right: 30px;
+}
+
+button.filter-button {
+  border: 2px solid #d9d9d9;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all ease-in-out 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-right: 2.4rem;
+  position: relative;
+  padding: 1px 0;
+}
+
+button.filter-button:hover {
+  background-color: #f3f8ff;
+  transform: scale(1.015);
+}
+
+span.filter-button-icon-wrapper {
+  background-color: var(--light-blue);
+  border-radius: 100%;
+  height: 5.5rem;
+  width: 5.5rem;
+  min-height: 5.5rem;
+  min-width: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+}
+
+i.filter-icon {
+  font-size: 2.7rem;
+  color: var(--blue);
+  margin-top: -6px;
+}
+
+span.text-filter-button {
+  margin: 0 16px;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.search-results {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.search-result-icon-wrapper {
+  background: white;
+  border: 1.8px solid var(--grey);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  font-size: 4rem;
+  font-weight: 900;
+  border-radius: 50px;
+  margin-right: 1rem;
+  color: var(--blue);
+}
+
+.search-filter-text {
+  font-size: 1.6rem;
+}
+
+/* Hosting section */
 
 .hosting {
   max-width: 1400px;
