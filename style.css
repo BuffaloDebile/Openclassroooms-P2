@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap');
 
 /* CSS Reset start */
 
@@ -10,6 +10,8 @@
   --blue: #0065fc;
   --light-blue: #deebff;
   --grey: #f2f2f2;
+  --dark-gray: #161616;
+
   font-size: 62.5%;
   /* Now 10px = 1rem! */
 }
@@ -43,7 +45,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: Poppins, Arial, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -91,3 +93,113 @@ select {
 }
 
 /* CSS Reset end */
+
+.wrapper {
+  min-height: calc(100vh - 230px);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: var(--grey);
+  font-size: 5rem;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+  padding: 0 30px;
+}
+
+.logo-img {
+  height: auto;
+  min-width: 110px;
+}
+
+nav a {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--dark-gray);
+  text-decoration: none;
+  text-align: center;
+  padding: 60px 0;
+  border-top: 4px solid transparent;
+  transition: all ease-in-out 0.2s;
+}
+nav a:hover {
+  border-top: 4px solid var(--blue);
+  color: var(--blue);
+}
+
+nav #hebergement-navlink {
+  border-top: 4px solid var(--blue);
+  color: var(--blue);
+}
+
+nav #sincrire-navlink {
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.search {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: var(--grey);
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.hosting {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: var(--grey);
+  font-size: 5rem;
+  margin-bottom: 10px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hosting .hosting-hebergement {
+  background: var(--light-blue);
+  margin: 10px;
+  flex: 1 1 800px;
+  font-size: 5rem;
+}
+
+.hosting .most-popular {
+  background: var(--light-blue);
+  margin: 10px;
+  flex: 1 1 400px;
+  font-size: 5rem;
+}
+
+.most-popular {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: var(--grey);
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.activities {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: var(--grey);
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  width: 100%;
+  min-height: 230px;
+  margin: 0 auto;
+  background: var(--grey);
+  font-size: 5rem;
+}
