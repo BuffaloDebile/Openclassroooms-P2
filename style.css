@@ -46,6 +46,10 @@ dd {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* Set core body defaults */
 body {
   scroll-behavior: smooth;
@@ -112,8 +116,17 @@ h1 {
   font-size: 3.2rem;
 }
 
+h2 {
+  font-size: 2.4rem;
+}
+
 p {
   font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-gray);
 }
 
 /* Header */
@@ -124,7 +137,6 @@ header {
   justify-content: space-between;
   max-width: 1440px;
   margin: 0 auto;
-
   font-size: 5rem;
   flex-wrap: wrap;
 }
@@ -132,7 +144,7 @@ header {
 main {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 nav {
@@ -149,7 +161,7 @@ nav {
 img.logo-img {
   height: 4.5rem;
   width: auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 nav a {
@@ -224,7 +236,7 @@ span i.fa-map-marker-alt {
 }
 
 .form-search input::placeholder {
-  color: #b5b5b5;
+  color: #9f9f9f;
 }
 
 .form-search input:focus-visible {
@@ -328,7 +340,7 @@ span.text-filter-button {
 
 .search-result-icon-wrapper {
   background: white;
-  border: 1.8px solid var(--grey);
+  border: 1.8px solid #d9d9d9;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -349,6 +361,8 @@ span.text-filter-button {
 
 /* Hosting section */
 
+/* Hosting  */
+
 .hosting {
   max-width: 1400px;
   margin: 0 auto;
@@ -356,7 +370,7 @@ span.text-filter-button {
   font-size: 5rem;
   margin-bottom: 10px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   flex-wrap: wrap;
   grid-gap: 30px;
@@ -366,11 +380,11 @@ span.text-filter-button {
   background: var(--grey);
   border-radius: 30px;
   padding: 30px;
-  flex: 1 1 900px;
+  flex: 1 1 890px;
   font-size: 5rem;
 }
 
-h1.hosting-hebergement-title {
+h2.hosting-hebergement-title {
   padding: 0px 0 20px 0px;
   font-size: 2.4rem;
 }
@@ -397,6 +411,7 @@ a.hebergement-see-more {
   border-radius: 20px;
   height: 100%;
   transition: all ease-in-out 0.2s;
+  box-shadow: 0 0 16px #0000002e;
 }
 
 .hosting-maincard:hover {
@@ -452,10 +467,51 @@ a.hebergement-see-more {
   color: var(--dark-gray);
 }
 
+/* Most popular  */
+
 .hosting .most-popular {
-  background: var(--light-blue);
+  background: var(--grey);
   flex: 1 1 440px;
-  font-size: 5rem;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+article.hosting-popular {
+  margin: 20px 0;
+}
+
+.most-popular > .heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.4rem;
+  padding-bottom: 20px;
+}
+
+.heading-wrapper > span > i {
+  font-size: 3.5rem;
+}
+
+.wrapper-most-popular {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+}
+
+a.link-popular-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.popular-img-wrapper {
+  width: 30%;
+  max-width: 30%;
+  height: 100%;
+}
+
+.popular-img-wrapper img {
+  border-radius: 15px 0 0 15px;
 }
 
 .most-popular {
