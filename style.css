@@ -373,7 +373,7 @@ span.text-filter-button {
   align-items: stretch;
   justify-content: space-between;
   flex-wrap: wrap;
-  grid-gap: 30px;
+  gap: 30px;
 }
 
 .hosting .hosting-hebergement {
@@ -426,7 +426,7 @@ a.hebergement-see-more {
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: 14rem;
+  height: 11rem;
 }
 
 .hosting-hebergement-text-wrapper {
@@ -477,7 +477,8 @@ a.hebergement-see-more {
 }
 
 article.hosting-popular {
-  margin: 20px 0;
+  margin: 15px 0;
+  max-height: 25%;
 }
 
 .most-popular > .heading-wrapper {
@@ -502,22 +503,45 @@ article.hosting-popular {
 a.link-popular-wrapper {
   display: flex;
   flex-direction: row;
+  max-height: 100%;
+  height: 100%;
 }
 
 .popular-img-wrapper {
-  width: 30%;
-  max-width: 30%;
-  height: 100%;
+  width: 33%;
+  min-width: 33%;
+  max-width: 33%;
+  min-width: 33%;
+  min-height: 100%;
 }
 
 .popular-img-wrapper img {
   border-radius: 15px 0 0 15px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .most-popular {
   max-width: 1400px;
   margin: 0 auto;
   background: var(--grey);
+}
+
+.popular-text-content {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-text-content > h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.popular-text-content p,
+.popular-text-content strong {
+  font-size: 1.6rem;
 }
 
 .activities {
