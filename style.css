@@ -149,7 +149,6 @@ main {
 
 nav {
   display: flex;
-  gap: 60px;
   padding: 0 30px;
 }
 
@@ -170,7 +169,7 @@ nav a {
   color: var(--dark-gray);
   text-decoration: none;
   text-align: center;
-  padding: 25px 0;
+  padding: 25px;
   border-top: 4px solid transparent;
   transition: all ease-in-out 0.2s;
 }
