@@ -821,7 +821,7 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  input#search-city {
+  input#search-city-input {
     width: 100%;
   }
 
