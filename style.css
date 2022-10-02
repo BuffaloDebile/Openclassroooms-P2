@@ -434,6 +434,7 @@ a.hebergement-see-more {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  height: 50%;
 }
 
 .stars-wrapper {
